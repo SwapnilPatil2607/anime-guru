@@ -127,8 +127,16 @@ nav select {
   h1::before{
    content: "AG";
   }
+  .about p{
+    font-size: 15px;
+    margin: 5px;
+  }
+  h3{
+    font-size: 15px;
+  }
+  
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:600px) {
   #search {
     margin: 15px;
     padding: 0px ;
@@ -151,13 +159,6 @@ nav select {
   .poster {
     height: 100px;
     margin: 0px 10px;
-  }
-  .about p{
-    font-size: 15px;
-    margin: 5px;
-  }
-  h3{
-    font-size: 15px;
   }
   #logo {
     padding: 10px;
