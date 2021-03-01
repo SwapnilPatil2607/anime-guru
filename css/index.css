@@ -6,6 +6,7 @@ nav {
   display: flex;
   background-color: #22a6b3;
   font-family: "Big Shoulders Stencil Text", cursive;
+  width: auto;
 }
 #logo {
   padding: 10px;
@@ -84,4 +85,85 @@ nav select {
 }
 .view:hover {
   background-color: #4a69bd;
+}
+@media screen and (max-width:950px){
+  #container {
+    color: white;
+    font-family: "Big Shoulders Stencil Text", cursive;
+    padding: 20px 0px 0px 50px;
+    background-color: #222f3e;
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-gap: 10px;
+    
+  }
+  nav p {
+    cursor: pointer;
+    padding: 0px 0px;
+    margin: 20px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:650px){
+  #container {
+    color: white;
+    font-family: "Big Shoulders Stencil Text", cursive;
+    padding: 20px 0px 0px 50px;
+    background-color: #222f3e;
+    display: grid;
+    grid-template-columns:auto;
+    grid-gap: 10px;
+  }
+  nav p {
+    cursor: pointer;
+    padding: 0px 0px;
+    margin: 20px;
+    font-size: 20px;
+    display: none;
+  }
+  h1{
+    display: none;
+  }
+  h1::before{
+   content: "AG";
+  }
+}
+@media screen and (max-width:400px){
+  #search {
+    margin: 15px;
+    padding: 0px ;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+  }
+  #searchbtn {
+    padding: 0px 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: "Big Shoulders Stencil Text", cursive;
+    margin: 20px 0px;
+  }
+  .card {
+    width: 200px;
+  }
+  .poster {
+    height: 100px;
+    margin: 0px 10px;
+  }
+  .about p{
+    font-size: 15px;
+    margin: 5px;
+  }
+  h3{
+    font-size: 15px;
+  }
+  #logo {
+    padding: 10px;
+    height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    margin: auto;
+  }
 }

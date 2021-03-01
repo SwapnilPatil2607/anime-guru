@@ -1,8 +1,10 @@
 window.addEventListener("load", function () {
   var home = document.getElementById("home");
   home.addEventListener("click", backhome);
+
   if (localStorage.getItem("id")) {
     var id = localStorage.getItem("id");
+
     var xhm = new XMLHttpRequest();
     xhm.open("GET", "https://api.jikan.moe/v3/anime/" + id + "/pictures");
     xhm.send();
@@ -11,9 +13,11 @@ window.addEventListener("load", function () {
       var poster = document.getElementById("poster");
       poster.setAttribute("src", pos);
     };
+
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://api.jikan.moe/v3/anime/" + id + "/episodes");
     xhr.send();
+
     xhr.onload = function () {
       var epis = JSON.parse(xhr.response).episodes;
       localStorage.setItem("episodes", JSON.stringify(epis));
@@ -43,11 +47,12 @@ window.addEventListener("load", function () {
         cont.append(h1);
       }
     };
+
   }
 });
 function redi() {
   location.assign(event.target.value);
 }
 function backhome() {
-  location.assign("index.html");
+  location.assign("../index.html");
 }
