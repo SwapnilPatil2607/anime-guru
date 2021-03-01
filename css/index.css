@@ -14,6 +14,9 @@ nav {
   border-radius: 50%;
   margin-left: 10px;
 }
+#AG{
+  display: none;
+}
 #logo:hover {
   transition: 1s;
   transform: rotate(360deg);
@@ -124,9 +127,7 @@ nav select {
   h1{
     display: none;
   }
-  h1::before{
-   content: "AG";
-  }
+
   .about p{
     font-size: 15px;
     margin: 5px;
@@ -166,5 +167,10 @@ nav select {
     border-radius: 50%;
     width: 30px;
     margin: auto;
+  }
+  #AG{
+    display:block;
+    margin-left:5px;
+    margin-right: 30px;
   }
 }
